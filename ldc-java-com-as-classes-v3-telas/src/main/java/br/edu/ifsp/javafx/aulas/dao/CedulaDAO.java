@@ -22,7 +22,7 @@ public class CedulaDAO {
         return instance;
     }
 
-    // Recupera a conexão com o Banco de Dados
+    // Recupera a conexão com o Banco de Dados legaakdkafjdifij
     private Database getConnection() {
         if (this.db == null) {
             Database db = new Database();
