@@ -1,4 +1,4 @@
-/*package br.edu.ifsp.javafx.aulas.dao;
+package br.edu.ifsp.javafx.aulas.dao;
 
 import br.edu.ifsp.javafx.aulas.database.Database;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class CedulaDAO {
     private Database getConnection() {
         if (this.db == null) {
             Database db = new Database();
-            db.init();
+            db.initCedula();
             this.db = db;
         }
         return this.db;
@@ -35,13 +35,13 @@ public class CedulaDAO {
     // Cria um novo Cedula
     public void create(Cedula novo) {
         Database db = getConnection();
-        db.addDado(novo);
+        db.addDadoCedula(novo);
     }
 
     // Recupera todas as listas
     public ArrayList<Cedula> read() {
         Database db = getConnection();
-        return db.recuperaDado();
+        return db.recuperaDadoCedula();
     }
 
     public void delete(Cedula deletar) {
@@ -52,4 +52,3 @@ public class CedulaDAO {
         // Sem implementação
     }
 }
-*/

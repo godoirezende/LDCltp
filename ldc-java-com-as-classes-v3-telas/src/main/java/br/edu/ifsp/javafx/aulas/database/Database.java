@@ -8,7 +8,7 @@ import br.edu.ifsp.javafx.aulas.model.Usuario;
 // Esta classe simula um SGDB. Coloque onde ficará os dados aqui!
 // Exemplo do professor sobre BDD
 //
-public class Database{
+public class Database {
   private ArrayList<Cedula> cedulas;
   private ArrayList<Usuario> usuarios;
 

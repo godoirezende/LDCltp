@@ -1,4 +1,4 @@
-/*package br.edu.ifsp.javafx.aulas.dao;
+package br.edu.ifsp.javafx.aulas.dao;
 
 import br.edu.ifsp.javafx.aulas.database.Database;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class UsuarioDAO {
     private Database getConnection() {
         if (this.db == null) {
             Database db = new Database();
-            db.init();
+            db.initUsuario();
             this.db = db;
         }
         return this.db;
@@ -35,13 +35,13 @@ public class UsuarioDAO {
     // Cria um novo Usuario
     public void create(Usuario novo) {
         Database db = getConnection();
-        db.addDado(novo);
+        db.addDadoUsuario(novo);
     }
 
     // Recupera todas as listas
     public ArrayList<Usuario> read() {
         Database db = getConnection();
-        return db.recuperaDado();
+        return db.recuperaDadoUsuario();
     }
 
     public void delete(Usuario deletar) {
@@ -52,4 +52,4 @@ public class UsuarioDAO {
         // Sem implementação
     }
 }
-*/
+
