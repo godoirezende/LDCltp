@@ -19,6 +19,8 @@ public class App extends Application {
     // public static ArrayList<Cadastro> listaCadastros = new ArrayList<>();
     private static Scene scene;
 
+// COMIT DE TESTE MEU COMPANHEIRO, OLHA AQUI PEDRÃO
+
     @Override
     public void start(Stage stage) throws IOException {
         URL path = getClass().getResource("Menu.fxml");
